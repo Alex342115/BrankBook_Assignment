@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.profile-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 1.4rem;
+  width: 22.5rem;
+  height: 5.5rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--White-500, #e5e5e5);
+  background: linear-gradient(100deg, #bbceff 3.88%, #fbe3bf 57.64%);
+}
+
+.profile-photo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+/* SideBar-Menu */
+
+.profile-menu {
+  width: 22.5rem;
+  height: 16.625;
+  background-color: white;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.625rem;
+}
+
+.profile-menu .profile-option > * {
+  width: 20.5rem;
+  padding: 1rem 1.8125rem;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Order-Menu */
+
+.order-menu {
+  width: 22.5rem;
+  height: 16.625;
+  background-color: white;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.625rem;
+}
+
+.order-menu .order-option > * {
+  width: 20.5rem;
+  padding: 1rem 1.8125rem;
+  align-items: center;
+  gap: 0.25rem;
+}
+/* End */

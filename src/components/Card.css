@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  width: 50rem;
+  height: 19rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.item-photo {
+  width: 5.85rem;
+  aspect-ratio: 1;
+}
+
+.review-title {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.review-photo {
+  display: flex;
+  gap: 0.625rem;
+  width: 4.6875rem;
+  height: 4.625rem;
+  object-fit: fill;
+  /* aspect-ratio: 1; */
+  background: lightgray 50% / cover no-repeat;
+  border-radius: 0.3125rem;
+}
+
+.rating {
+  margin-top: 0.625rem;
+  display: flex;
+  gap: 0.625rem;
+}
