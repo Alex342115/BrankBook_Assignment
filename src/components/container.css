@@ -4,10 +4,10 @@
 }
 
 .container {
+  flex-direction: column;
   border-radius: 0.625rem;
   border: 1px solid var(--White-500, #e5e5e5);
   background-color: white;
-
   padding: 1rem 1.5rem;
 }
 

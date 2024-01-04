@@ -57,28 +57,26 @@ export default function Container() {
     },
   ];
 
-  const reviewStats = itemReviews.map(
-    (itemReview) => (
-      <Card
-        key={itemReview?.id}
-        photo={itemReview?.photo}
-        itemName={itemReview?.itemName}
-        itemDesc={itemReview?.itemDesc}
-        itemRating={itemReview?.itemRating}
-        title={itemReview?.title}
-        titleDesc={itemReview?.titleDesc}
-        itemphoto={itemReview?.itemphoto}
-        reviewDate={itemReview?.reviewDate}
-      />
-    )
-  );
+  const reviewStats = itemReviews.map((itemReview) => (
+    <Card
+      key={itemReview?.id}
+      photo={itemReview?.photo}
+      itemName={itemReview?.itemName}
+      itemDesc={itemReview?.itemDesc}
+      itemRating={itemReview?.itemRating}
+      title={itemReview?.title}
+      titleDesc={itemReview?.titleDesc}
+      itemphoto={itemReview?.itemphoto}
+      reviewDate={itemReview?.reviewDate}
+    />
+  ));
   console.log(reviewStats);
 
   return (
-    <div className="container">
-      <h1>My Reviews</h1>
+    <div className="container flex">
+      <h1 className="text-center">My Reviews</h1>
       {/* hello */}
-      {reviewStats}
+      <div className="flex flex-col items-center">{reviewStats}</div>
     </div>
   );
 }

@@ -5,36 +5,42 @@
 
 .cards {
   width: 50rem;
-  height: 19rem;
-  display: flex;
+  /* height: 19rem; */
   gap: 1.25rem;
+  /* align-items: center; */
+  /* border: 2px solid red; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--White-500, #e5e5e5);
 }
 
 .item-photo {
   width: 5.85rem;
   aspect-ratio: 1;
+  flex-shrink: 0;
 }
 
 .review-title {
-  display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
+.review-desc > * {
+  margin-bottom: 0.625rem;
+}
+
 .review-photo {
-  display: flex;
   gap: 0.625rem;
+}
+
+.review-item-photo {
   width: 4.6875rem;
   height: 4.625rem;
   object-fit: fill;
-  /* aspect-ratio: 1; */
-  background: lightgray 50% / cover no-repeat;
   border-radius: 0.3125rem;
 }
 
 .rating {
   margin-top: 0.625rem;
-  display: flex;
   gap: 0.625rem;
 }

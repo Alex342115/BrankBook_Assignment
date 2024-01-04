@@ -73,7 +73,7 @@ export default function Navbar() {
               <a href="#">Mobile & Tablets</a>{" "}
             </li>
             <li className="nav-link">
-              <a href="#"></a>Electrical & Electronics
+              <a href="#">Electrical & Electronics</a>
             </li>
             <li className="nav-link">
               <a href="#">Grocery</a>{" "}

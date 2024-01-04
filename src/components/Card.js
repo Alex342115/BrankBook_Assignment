@@ -80,28 +80,28 @@ export default function Cards(props) {
   }
 
   return (
-    <div className="cards">
+    <div className="cards flex">
       <div className="item-photo">
         <img src={photo} alt="item" />
       </div>
       <div className="review-stats">
-        <div className="review-title">
+        <div className="review-title flex">
           <div className="review-item-name">
-            <h3>{itemName}</h3>
-            <p>{itemDesc}</p>
-            <div className="rating">{ratingResult}</div>
+            <h3 className="font-semibold">{itemName}</h3>
+            <p className="font-normal text-gray-500">{itemDesc}</p>
+            <div className="rating flex">{ratingResult}</div>
           </div>
-          <div className="review-item-date">
-            Reviewed
-            <p>{reviewResult}</p>
+          <div className="review-item-date text-right">
+            <p className="font-normal text-gray-500">Reviewed</p>
+            <p className="font-medium">{reviewResult}</p>
           </div>
         </div>
         <div className="review-desc">
-          <h3>{title}</h3>
-          <p>{titleDesc}</p>
-          <div className="review-photo">
+          <h3 className="font-semibold text-base">{title}</h3>
+          <p className='font-normal text-gray-500 text-base'>{titleDesc}</p>
+          <div className="review-photo flex">
             {itemphoto.map((item) => (
-              <img src={item} alt="item" />
+              <img src={item} alt="item" className="review-item-photo" />
             ))}
           </div>
         </div>

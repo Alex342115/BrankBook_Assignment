@@ -6,8 +6,8 @@ export default function Sidebar() {
       <div className="profile-card">
         <img className="profile-photo" src={ProfilePhoto} alt="MainProfile" />
         <div className="profile-details">
-          <h5>Hello</h5>
-          <h1>Jagannath S</h1>
+          <h5 className='text-sm'>Hello</h5>
+          <h1 className='font-black text-xl'>Jagannath S</h1>
         </div>
       </div>
 
