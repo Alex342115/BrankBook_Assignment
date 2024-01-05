@@ -15,10 +15,13 @@ export default function Cards(props) {
   const reviewDated = reviewDate.split(" ");
   const currDate = Date().split(" ").slice(1, 4);
   var reviewResult;
+  const presentDate = parseInt(currDate[1]);
+  const revDate = parseInt(reviewDated[1]);
   if (currDate[2] === reviewDated[2] && currDate[0] === reviewDated[0]) {
-    if (currDate[1] === reviewDated[1]) {
+    if (presentDate == revDate) {
+      // console.log(presentDate, revDate);
       reviewResult = "Today";
-    } else if (currDate[1] - 1 === reviewDated[1]) {
+    } else if (presentDate - 1 === revDate) {
       reviewResult = "Yesterday";
     } else {
       reviewResult = reviewDate;

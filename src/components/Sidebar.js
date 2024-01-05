@@ -96,7 +96,7 @@ export default function Sidebar() {
             <li>
               <NavLink
                 to="/error"
-                activeClassName={({ isActive }) =>
+                ClassName={({ isActive }) =>
                   isActive ? "active" : "notActive"
                 }
               >
