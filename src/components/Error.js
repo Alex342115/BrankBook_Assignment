@@ -1,13 +1,14 @@
 import React from "react";
-import Logo from "./icons/wishlist.svg";
-import "./style/Wishlist.css";
+// import Logo from "./icons/wishlist.svg";
+import "./style/Error.css";
 
 function Error() {
   return (
-    <div className="flex wishlist">
-      <div className="wish-desc flex">
-        <h1 className="underline text-xl font-black">404</h1>
-        <h1 className="text-xl font-black">PAGE NOT FOUND</h1>
+    <div className="flex error">
+      <div className="error-desc flex">
+      
+        <h1 className="error-title">404</h1>
+        <h1>PAGE NOT FOUND</h1>
       </div>
     </div>
   );

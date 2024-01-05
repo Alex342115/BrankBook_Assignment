@@ -32,6 +32,7 @@
   margin-top: 0.5rem;
   border-radius: 0.625rem;
   font-weight: 500;
+  /* border: 2px solid red; */
 }
 
 .profile-menu .profile-option > * {
@@ -41,6 +42,7 @@
   align-items: center;
   align-items: center;
   gap: 0.25rem;
+  /* border: 2px solid red; */
 }
 
 .profile-menu .profile-option > li > * {
@@ -58,6 +60,7 @@
   margin-top: 0.5rem;
   font-weight: 500;
   border-radius: 0.625rem;
+  /* border: 2px solid red; */
 }
 
 .order-menu .order-option > * {

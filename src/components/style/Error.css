@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.error {
+  flex-direction: column;
+  width: 100%;
+  height: 43.5rem;
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1rem 1.5rem;
+}
+
+.error-desc {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.error-desc > h1 {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-title {
+  font-weight: 400 ;
+  font-size: 3.375rem !important;
+}
