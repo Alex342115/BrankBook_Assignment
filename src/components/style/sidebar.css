@@ -55,9 +55,26 @@
 }
 
 .order-menu .order-option > * {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   width: 20.5rem;
-  padding: 1rem 1.8125rem;
+  /* height: 3rem; */
+  /* padding: 1rem 1.8125rem; */
   align-items: center;
   gap: 0.25rem;
+  /* border: 2px solid red; */
 }
 /* End */
+
+.order-menu .order-option > li > * {
+  padding: 1rem 1.8125rem;
+}
+
+li > .active {
+  background: #e1ebff;
+  color: #1159e5;
+  padding: 1rem 1.8125rem;
+  width: 20.5rem;
+}
+

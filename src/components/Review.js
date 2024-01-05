@@ -1,6 +1,6 @@
-import "./container.css";
+import "./style/review.css";
 import Card from "./Card";
-export default function Container() {
+export default function Review() {
   const itemReviews = [
     {
       id: 1,
@@ -70,7 +70,7 @@ export default function Container() {
       reviewDate={itemReview?.reviewDate}
     />
   ));
-  console.log(reviewStats);
+  // console.log(reviewStats);
 
   return (
     <div className="container flex">

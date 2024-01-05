@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./style/Card.css";
 export default function Cards(props) {
   const {
     photo,
@@ -15,10 +15,10 @@ export default function Cards(props) {
   const reviewDated = reviewDate.split(" ");
   const currDate = Date().split(" ").slice(1, 4);
   var reviewResult;
-  if (currDate[2] == reviewDated[2] && currDate[0] == reviewDated[0]) {
-    if (currDate[1] == reviewDated[1]) {
+  if (currDate[2] === reviewDated[2] && currDate[0] === reviewDated[0]) {
+    if (currDate[1] === reviewDated[1]) {
       reviewResult = "Today";
-    } else if (currDate[1] - 1 == reviewDated[1]) {
+    } else if (currDate[1] - 1 === reviewDated[1]) {
       reviewResult = "Yesterday";
     } else {
       reviewResult = reviewDate;
@@ -27,7 +27,7 @@ export default function Cards(props) {
     reviewResult = reviewDate;
   }
 
-  // Raring Calculation
+  // Rating Calculation
   const restStar = 5 - itemRating;
   const positiveStar = (
     <svg
@@ -98,7 +98,7 @@ export default function Cards(props) {
         </div>
         <div className="review-desc">
           <h3 className="font-semibold text-base">{title}</h3>
-          <p className='font-normal text-gray-500 text-base'>{titleDesc}</p>
+          <p className="font-normal text-gray-500 text-base">{titleDesc}</p>
           <div className="review-photo flex">
             {itemphoto.map((item) => (
               <img src={item} alt="item" className="review-item-photo" />

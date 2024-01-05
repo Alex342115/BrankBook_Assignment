@@ -13,7 +13,9 @@
   background: #fff;
   color: #000;
 }
-
+.company-name{
+  font-weight: 700;
+}
 .top-nav {
     display: flex;
     justify-content: space-between;

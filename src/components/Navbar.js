@@ -1,18 +1,16 @@
-import Icon from "./Icon.jpg";
-import ProfileIcon from "./Profile.jpg";
-import "./Navbar.css";
+import Icon from "./icons/icon.jpg";
+import ProfileIcon from "./icons/Profile.jpg"
+import "./style/Navbar.css";
 
 export default function Navbar() {
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-  </style>;
+  
   return (
     <>
       <nav className="navbar">
         <div className="top-nav">
           <div className="icon">
             <img src={Icon} alt="Icon" />
-            <h3>Mo Market</h3>
+            <h3 className='font-bold company-name'>Mo Market</h3>
           </div>
           <div className="input">
             <input
