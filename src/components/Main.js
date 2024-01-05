@@ -11,6 +11,11 @@ export default function Main() {
       <Routes>
         <Route path="/" element={<Review />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/orders" element={<Error />} />
+        <Route path="/info" element={<Error />} />
+        <Route path="/address" element={<Error />} />
+        <Route path="/paymentInfo" element={<Error />} />
+        <Route path="/notifications" element={<Error />} />
         <Route path="/*" element={<Error />} />
       </Routes>
 

@@ -36,9 +36,15 @@
 
 .profile-menu .profile-option > * {
   width: 20.5rem;
-  padding: 1rem 1.8125rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   align-items: center;
   gap: 0.25rem;
+}
+
+.profile-menu .profile-option > li > * {
+  padding: 1rem 1.8125rem;
 }
 
 /* Order-Menu */
@@ -77,4 +83,3 @@ li > .active {
   padding: 1rem 1.8125rem;
   width: 20.5rem;
 }
-

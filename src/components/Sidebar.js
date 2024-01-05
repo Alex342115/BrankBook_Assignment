@@ -18,16 +18,44 @@ export default function Sidebar() {
           <p>My Profile</p>
           <ol className="profile-option">
             <li>
-              <a href="#">Prosonal Information</a>
+              <NavLink
+                to="/info"
+                ClassName={({ isActive }) =>
+                  isActive ? "active" : "notActive"
+                }
+              >
+                Prosonal Information
+              </NavLink>
             </li>
             <li>
-              <a href="#">Manage Addresses</a>
+              <NavLink
+                to="/address"
+                ClassName={({ isActive }) =>
+                  isActive ? "active" : "notActive"
+                }
+              >
+                Manage Addresses
+              </NavLink>
             </li>
             <li>
-              <a href="#">Payment Card Information</a>
+              <NavLink
+                to="/paymentInfo"
+                ClassName={({ isActive }) =>
+                  isActive ? "active" : "notActive"
+                }
+              >
+                Payment Card Information
+              </NavLink>
             </li>
             <li>
-              <a href="#">All Notifications</a>
+              <NavLink
+                to="/notifications"
+                ClassName={({ isActive }) =>
+                  isActive ? "active" : "notActive"
+                }
+              >
+                All Notifications
+              </NavLink>
             </li>
           </ol>
         </div>
@@ -37,7 +65,7 @@ export default function Sidebar() {
           <ol className="order-option">
             <li>
               <NavLink
-                to="/error"
+                to="/orders"
                 ClassName={({ isActive }) =>
                   isActive ? "active" : "notActive"
                 }
