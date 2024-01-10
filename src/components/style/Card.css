@@ -10,7 +10,7 @@
   /* align-items: center; */
   /* border: 2px solid red; */
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
   border-bottom: 2px solid var(--White-500, #e5e5e5);
 }
 
